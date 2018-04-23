@@ -13,15 +13,10 @@ The application will use the API from The Movie DB ( https://developers.themovie
 
 ## Artitecture
 * Bean package
-** Movie class with id, title, description, original title and a list of its directors
-** Director with id, name and profile linke
+   * Movie class with id, title, description, original title and a list of its directors
+   * Director with id, name and profile linke
 * DAO
-** Interface: Dao
-** MovieDataDAO used to connect to MySQL database and update database
+   * Interface: Dao
+   * MovieDataDAO used to connect to MySQL database and update database
 * IMDbController:
-** A controller with fetch data from IMDb, parse json and map to object and also map to tables in databases
-
-
-## Built With
-
-* [sts](https://spring.io/tools/sts) - IDE
+   * A controller with fetch data from IMDb, parse json and map to object and also map to tables in databases
